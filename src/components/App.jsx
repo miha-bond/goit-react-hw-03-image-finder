@@ -95,10 +95,10 @@ export class App extends Component {
           {photos.length > 0 && (
             <ImageGallery photos={photos} onSelect={this.selectImage} />
           )}
-          <Modal selectImage={selectedImage} resetImage={this.resetImage} />
-          {photos.length > 39 && !isLoading && (
+          {photos.length > 38 && !isLoading && (
             <Button onClick={this.loadMore} />
           )}
+          <Modal selectImage={selectedImage} resetImage={this.resetImage} />
           <ToastContainer />
         </div>
       </>
